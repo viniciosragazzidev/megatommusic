@@ -42,8 +42,8 @@ export default function RootLayout({
           >
             <Phone className="w-4 h-4 text-orange-400" /> (21) 9 8337-3765
           </Link>
-          <Sidebar />
         </div>
+        <Sidebar />
 
         {children}
       </body>
