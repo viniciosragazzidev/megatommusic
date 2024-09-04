@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
-import { Dot, Phone, Pin } from "lucide-react";
+import { Dot, Headset, NotepadText, Phone, Pin } from "lucide-react";
 import Link from "next/link";
 import Sidebar from "./components/sidebar";
 
@@ -44,6 +44,13 @@ export default function RootLayout({
           </Link>
         </div>
         <Sidebar />
+
+        <Link
+          href={`https://wa.me/5521983373765?text=Olá, Megatom Music! Gostaria de mais informações!`}
+          className="fixed bottom-2   right-5 text-orange-400 text-sm font-semibold flex items-center gap-2 px-3 py-2 rounded-lg bg-gray-900 w-max "
+        >
+          <Headset className="w-5 h-5" />
+        </Link>
 
         {children}
       </body>

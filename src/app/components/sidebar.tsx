@@ -9,7 +9,7 @@ const Sidebar = () => {
     <>
       <span
         onClick={() => setOpen(!open)}
-        className="fixed top-0 right-8 p-3 cursor-pointer bg-gray-950"
+        className="fixed top-2 right-8 p-2 rounded-lg cursor-pointer bg-gray-950"
       >
         <Menu className="text-orange-400" />
       </span>
