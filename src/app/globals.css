@@ -16,18 +16,15 @@
   }
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+.translate-to-0 {
+  transform: translateX(100%);
+  animation: translate-to-0 0.4s ease forwards;
 }
-
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
+@keyframes translate-to-0 {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(0);
   }
 }
