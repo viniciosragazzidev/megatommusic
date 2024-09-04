@@ -45,7 +45,7 @@ const Sidebar = () => {
               </li>
               <li className="w-full flex  flex-col items-center gap-2">
                 <Link
-                  href={`https://wa.me/5521983373765`}
+                  href={`https://wa.me/5521983373765?text=Olá, Megatom Music! Gostaria de mais informações!`}
                   target="_blank"
                   className="text-gray-300 text-sm flex items-center flex-col gap-2"
                 >

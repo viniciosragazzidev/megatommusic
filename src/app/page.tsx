@@ -57,10 +57,12 @@ export default function Home() {
               <Link href="https://www.instagram.com/megatommusic/">
                 <Instagram className="w-5 h-5 text-orange-400" />
               </Link>
-              <Link href="https://www.instagram.com/megatommusic/">
+              <Link href="https://www.facebook.com/megatommusic/">
                 <Facebook className="w-5 h-5 text-orange-400" />
               </Link>
-              <Link href="https://www.instagram.com/megatommusic/">
+              <Link
+                href={`https://wa.me/5521983373765?text=Olá, Megatom Music! Gostaria de mais informações!`}
+              >
                 <PhoneCall className="w-5 h-5 text-orange-400" />
               </Link>
             </li>
