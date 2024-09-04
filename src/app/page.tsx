@@ -84,7 +84,11 @@ export default function Home() {
             <h1 className="text-4xl font-bold text-gray-900 flex items-center ">
               Quem somos?
             </h1>
-            <Image src={About} className="w-80" alt="Megatom Music" />
+            <Image
+              src={About}
+              className="w-80 max-lg:w-64"
+              alt="Megatom Music"
+            />
           </div>
 
           <div className="w-full flex flex-col gap-4 ">
