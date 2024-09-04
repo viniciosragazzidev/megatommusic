@@ -9,7 +9,7 @@ const Sidebar = () => {
     <>
       <span
         onClick={() => setOpen(!open)}
-        className="absolute top-0 right-8 py-3 cursor-pointer"
+        className="fixed top-0 right-8 p-3 cursor-pointer bg-gray-950"
       >
         <Menu className="text-orange-400" />
       </span>
@@ -20,7 +20,7 @@ const Sidebar = () => {
         }`}
       >
         <aside
-          className={`w-80 h-full border-l-4 border-orange-400 bg-gray-950 shadow-lg shadow-gray-900/50 absolute top-0 right-0 translate-to-0  `}
+          className={`w-80 h-full border-l-2 border-orange-400 bg-gray-950 shadow-lg shadow-gray-900/50 absolute top-0 right-0 translate-to-0  `}
         >
           <span>
             <X
