@@ -78,8 +78,8 @@ export default function Home() {
           </nav>
         </div>
       </div>
-      <div className="w-full h-[70vh] flex justify-center bg-gray-300">
-        <div className="container w-full h-full py-8 max-sm:px-2 flex  gap-4 justify-center items-center">
+      <div className="w-full min-h-[70vh] flex justify-center bg-gray-300 px-5">
+        <div className="container w-full h-full py-8 max-sm:px-2 flex max-lg:flex-col  gap-4  justify-center items-center">
           <div className="flex flex-col items-center gap-2">
             <h1 className="text-4xl font-bold text-gray-900 flex items-center ">
               Quem somos?
