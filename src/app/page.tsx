@@ -36,27 +36,27 @@ export default function Home() {
 
           <nav className="w-full max-w-lg">
             <ul className="flex gap-4 flex-col w-full">
-              <li className="text-gray-300 text-sm  w-full flex justify-between px-4 items-center py-3 rounded-full bg-gray-900/20">
+              <li className="text-gray-300 text-sm  w-full flex justify-between gap-1 text-center px-4 items-center py-3 rounded-full bg-gray-900/20">
                 <Guitar className="w-5 h-5 text-orange-400" /> Reparos em
                 Instrumentos de Cordas{" "}
                 <Ellipsis className="w-5 h-5 text-gray-300" />
               </li>
-              <li className="text-gray-300 text-sm  w-full flex justify-between px-4 items-center py-3 rounded-full bg-gray-900/20">
+              <li className="text-gray-300 text-sm  w-full flex justify-between gap-1 text-center px-4 items-center py-3 rounded-full bg-gray-900/20">
                 <ListMusic className="w-5 h-5 text-orange-400" /> Reparos em
                 Instrumentos de Sopro{" "}
                 <Ellipsis className="w-5 h-5 text-gray-300" />
               </li>
-              <li className="text-gray-300 text-sm  w-full flex justify-between px-4 items-center py-3 rounded-full bg-gray-900/20">
+              <li className="text-gray-300 text-sm  w-full flex justify-between gap-1 text-center px-4 items-center py-3 rounded-full bg-gray-900/20">
                 <KeyboardMusic className="w-5 h-5 text-orange-400" /> Reparos em
                 Outros Instrumentos
                 <Ellipsis className="w-5 h-5 text-gray-300" />
               </li>
-              <li className="text-gray-300 text-sm  w-full flex justify-between px-4 items-center py-3 rounded-full bg-gray-900/20">
+              <li className="text-gray-300 text-sm  w-full flex justify-between gap-1 text-center px-4 items-center py-3 rounded-full bg-gray-900/20">
                 <Speaker className="w-5 h-5 text-orange-400" /> Reparos em
                 Equipamentos de Áudio ou Eletrônicos
                 <Ellipsis className="w-5 h-5 text-gray-300" />
               </li>
-              <li className="text-gray-300 text-sm  w-full flex justify-between px-4 items-center py-3 rounded-full bg-gray-900/20">
+              <li className="text-gray-300 text-sm  w-full flex justify-between gap-1 text-center px-4 items-center py-3 rounded-full bg-gray-900/20">
                 <MicVocal className="w-5 h-5 text-orange-400" /> Aulas de Música
                 <Ellipsis className="w-5 h-5 text-gray-300" />
               </li>
