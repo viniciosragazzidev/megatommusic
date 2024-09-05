@@ -45,7 +45,7 @@ export default function Home() {
                 onClick={() =>
                   currentItem === 0 ? setCurrentItem(8) : setCurrentItem(0)
                 }
-                className={`relative overflow-hidden h-max ${
+                className={`relative overflow-hidden ${
                   currentItem === 0 ? "h-36" : "h-max"
                 } transition-all`}
               >
@@ -107,7 +107,7 @@ export default function Home() {
                 onClick={() =>
                   currentItem === 2 ? setCurrentItem(8) : setCurrentItem(2)
                 }
-                className={`relative overflow-hidden h-max ${
+                className={`relative overflow-hidden ${
                   currentItem === 2 ? "h-36" : "h-max"
                 } transition-all`}
               >
@@ -137,7 +137,7 @@ export default function Home() {
                 onClick={() =>
                   currentItem === 3 ? setCurrentItem(8) : setCurrentItem(3)
                 }
-                className={`relative overflow-hidden h-max ${
+                className={`relative overflow-hidden ${
                   currentItem === 3 ? "h-36" : "h-max"
                 } transition-all`}
               >
@@ -167,7 +167,7 @@ export default function Home() {
                 onClick={() =>
                   currentItem === 4 ? setCurrentItem(8) : setCurrentItem(4)
                 }
-                className={`relative overflow-hidden h-max ${
+                className={`relative overflow-hidden ${
                   currentItem === 4 ? "h-36" : "h-max"
                 } transition-all`}
               >
