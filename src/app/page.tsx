@@ -76,7 +76,7 @@ export default function Home() {
                 onClick={() =>
                   currentItem === 1 ? setCurrentItem(8) : setCurrentItem(1)
                 }
-                className={`relative overflow-hidden h-max ${
+                className={`relative overflow-hidden  ${
                   currentItem === 1 ? "h-36" : "h-max"
                 } transition-all`}
               >
