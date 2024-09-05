@@ -12,7 +12,7 @@ export const metadata: Metadata = {
   description:
     "Reparos em Instrumentos de Cordas, Sopro, Percussão entre outros. Equipamentos de áudio e aula de música.",
 };
-
+// aaa
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -51,7 +51,6 @@ export default function RootLayout({
         >
           <Headset className="w-5 h-5" />
         </Link>
-
         {children}
       </body>
     </html>
