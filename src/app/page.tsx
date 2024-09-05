@@ -46,7 +46,7 @@ export default function Home() {
                   currentItem === 0 ? setCurrentItem(8) : setCurrentItem(0)
                 }
                 className={`relative overflow-hidden ${
-                  currentItem === 0 ? "h-36" : "h-max"
+                  currentItem === 0 ? "h-36 max-sm:h-44" : "h-max"
                 } transition-all`}
               >
                 <li className="text-gray-300 text-sm w-full flex cursor-pointer justify-between gap-1 text-center px-4 items-center py-3 rounded-full bg-gray-900/20 hover:bg-gray-900/15 transition-all hover:scale-[0.98]">
@@ -77,7 +77,7 @@ export default function Home() {
                   currentItem === 1 ? setCurrentItem(8) : setCurrentItem(1)
                 }
                 className={`relative overflow-hidden  ${
-                  currentItem === 1 ? "h-36" : "h-max"
+                  currentItem === 1 ? "h-36 max-sm:h-44" : "h-max"
                 } transition-all`}
               >
                 <li className="text-gray-300 text-sm w-full flex cursor-pointer justify-between gap-1 text-center px-4 items-center py-3 rounded-full bg-gray-900/20 hover:bg-gray-900/15 transition-all hover:scale-[0.98]">
@@ -108,7 +108,7 @@ export default function Home() {
                   currentItem === 2 ? setCurrentItem(8) : setCurrentItem(2)
                 }
                 className={`relative overflow-hidden ${
-                  currentItem === 2 ? "h-36" : "h-max"
+                  currentItem === 2 ? "h-36 max-sm:h-44" : "h-max"
                 } transition-all`}
               >
                 <li className="text-gray-300 text-sm w-full flex cursor-pointer justify-between gap-1 text-center px-4 items-center py-3 rounded-full bg-gray-900/20 hover:bg-gray-900/15 transition-all hover:scale-[0.98]">
@@ -138,7 +138,7 @@ export default function Home() {
                   currentItem === 3 ? setCurrentItem(8) : setCurrentItem(3)
                 }
                 className={`relative overflow-hidden ${
-                  currentItem === 3 ? "h-36" : "h-max"
+                  currentItem === 3 ? "h-36 max-sm:h-44" : "h-max"
                 } transition-all`}
               >
                 <li className="text-gray-300 text-sm w-full flex cursor-pointer justify-between gap-1 text-center px-4 items-center py-3 rounded-full bg-gray-900/20 hover:bg-gray-900/15 transition-all hover:scale-[0.98]">
@@ -168,7 +168,7 @@ export default function Home() {
                   currentItem === 4 ? setCurrentItem(8) : setCurrentItem(4)
                 }
                 className={`relative overflow-hidden ${
-                  currentItem === 4 ? "h-36" : "h-max"
+                  currentItem === 4 ? "h-36 max-sm:h-44" : "h-max"
                 } transition-all`}
               >
                 <li className="text-gray-300 text-sm w-full flex cursor-pointer justify-between gap-1 text-center px-4 items-center py-3 rounded-full bg-gray-900/20 hover:bg-gray-900/15 transition-all hover:scale-[0.98]">
