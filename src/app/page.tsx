@@ -1,7 +1,9 @@
+"use client";
 import Image from "next/image";
 import Logo from "../../public/Megatom.svg";
 import About from "../../public/about.png";
 import {
+  ChevronDown,
   Dot,
   Ellipsis,
   Facebook,
@@ -10,14 +12,17 @@ import {
   KeyboardMusic,
   ListMusic,
   MicVocal,
+  NotepadText,
   PhoneCall,
   Speaker,
 } from "lucide-react";
 import Link from "next/link";
+import React from "react";
 export default function Home() {
+  const [currentItem, setCurrentItem] = React.useState<number>();
   return (
     <div className="  bg-gray-950 overflow-x-hidden">
-      <div className="w-full h-screen flex justify-center">
+      <div className="w-full min-h-screen flex justify-center pt-8">
         <div className="container w-full h-full py-8 max-sm:px-2 flex flex-col gap-4 justify-center items-center">
           <header className="text-center flex flex-col gap-2 items-center">
             <h1 className="text-2xl font-bold text-gray-200 uppercase">
@@ -36,32 +41,160 @@ export default function Home() {
 
           <nav className="w-full max-w-lg">
             <ul className="flex gap-4 flex-col w-full">
-              <li className="text-gray-300 text-sm  w-full flex justify-between gap-1 text-center px-4 items-center py-3 rounded-full bg-gray-900/20">
-                <Guitar className="w-5 h-5 text-orange-400" /> Reparos em
-                Instrumentos de Cordas{" "}
-                <Ellipsis className="w-5 h-5 text-gray-300" />
-              </li>
-              <li className="text-gray-300 text-sm  w-full flex justify-between gap-1 text-center px-4 items-center py-3 rounded-full bg-gray-900/20">
-                <ListMusic className="w-5 h-5 text-orange-400" /> Reparos em
-                Instrumentos de Sopro{" "}
-                <Ellipsis className="w-5 h-5 text-gray-300" />
-              </li>
-              <li className="text-gray-300 text-sm  w-full flex justify-between gap-1 text-center px-4 items-center py-3 rounded-full bg-gray-900/20">
-                <KeyboardMusic className="w-5 h-5 text-orange-400" /> Reparos em
-                Outros Instrumentos
-                <Ellipsis className="w-5 h-5 text-gray-300" />
-              </li>
-              <li className="text-gray-300 text-sm  w-full flex justify-between gap-1 text-center px-4 items-center py-3 rounded-full bg-gray-900/20">
-                <Speaker className="w-5 h-5 text-orange-400" /> Reparos em
-                Equipamentos de Áudio ou Eletrônicos
-                <Ellipsis className="w-5 h-5 text-gray-300" />
-              </li>
-              <li className="text-gray-300 text-sm  w-full flex justify-between gap-1 text-center px-4 items-center py-3 rounded-full bg-gray-900/20">
-                <MicVocal className="w-5 h-5 text-orange-400" /> Aulas de Música
-                <Ellipsis className="w-5 h-5 text-gray-300" />
-              </li>
+              <div
+                onClick={() =>
+                  currentItem === 0 ? setCurrentItem(8) : setCurrentItem(0)
+                }
+                className={`relative overflow-hidden h-max ${
+                  currentItem === 0 ? "h-36" : "h-max"
+                } transition-all`}
+              >
+                <li className="text-gray-300 text-sm w-full flex cursor-pointer justify-between gap-1 text-center px-4 items-center py-3 rounded-full bg-gray-900/20 hover:bg-gray-900/15 transition-all hover:scale-[0.98]">
+                  <Guitar className="w-5 h-5 text-orange-400" /> Reparos em
+                  Instrumentos de Cordas
+                  <ChevronDown className="w-5 h-5 text-gray-300" />
+                </li>
+                <span className="text-gray-300 text-sm block py-3 absolute">
+                  Realizamos <span className="font-bold">ajustes</span> e{" "}
+                  <span className="font-bold">reparos</span> em violões,
+                  guitarras, contrabaixos e violinos. De regulagens finas até
+                  consertos elétricos ou estruturais, garantimos que seu
+                  instrumento esteja em{" "}
+                  <span className="font-bold">perfeita condição</span> para um
+                  som impecável.
+                  <Link
+                    href="/cordas"
+                    className="text-orange-400 flex items-center gap-1 pt-2 justify-end"
+                  >
+                    <NotepadText className="w-4 h-4 text-orange-400" /> Faça um
+                    orçamento!
+                  </Link>
+                </span>
+              </div>
 
-              <li className="text-gray-300 text-sm  w-full flex justify-center px-4  gap-5 items-center py-3 rounded-full bg-gray-900/20">
+              <div
+                onClick={() =>
+                  currentItem === 1 ? setCurrentItem(8) : setCurrentItem(1)
+                }
+                className={`relative overflow-hidden h-max ${
+                  currentItem === 1 ? "h-36" : "h-max"
+                } transition-all`}
+              >
+                <li className="text-gray-300 text-sm w-full flex cursor-pointer justify-between gap-1 text-center px-4 items-center py-3 rounded-full bg-gray-900/20 hover:bg-gray-900/15 transition-all hover:scale-[0.98]">
+                  <ListMusic className="w-5 h-5 text-orange-400" /> Reparos em
+                  Instrumentos de Sopro
+                  <ChevronDown className="w-5 h-5 text-gray-300" />
+                </li>
+                <span className="text-gray-300 text-sm block py-3 absolute">
+                  Fazemos <span className="font-bold">manutenção</span> e{" "}
+                  <span className="font-bold">ajustes</span> em flautas,
+                  saxofones e trompetes. Nossa equipe cuida da limpeza, troca de
+                  peças e ajustes de <span className="font-bold">afinação</span>{" "}
+                  para restaurar a{" "}
+                  <span className="font-bold">qualidade sonora</span> do seu
+                  instrumento.
+                  <Link
+                    href="/sopro"
+                    className="text-orange-400 flex items-center gap-1 pt-2 justify-end"
+                  >
+                    <NotepadText className="w-4 h-4 text-orange-400" /> Faça um
+                    orçamento!
+                  </Link>
+                </span>
+              </div>
+
+              <div
+                onClick={() =>
+                  currentItem === 2 ? setCurrentItem(8) : setCurrentItem(2)
+                }
+                className={`relative overflow-hidden h-max ${
+                  currentItem === 2 ? "h-36" : "h-max"
+                } transition-all`}
+              >
+                <li className="text-gray-300 text-sm w-full flex cursor-pointer justify-between gap-1 text-center px-4 items-center py-3 rounded-full bg-gray-900/20 hover:bg-gray-900/15 transition-all hover:scale-[0.98]">
+                  <KeyboardMusic className="w-5 h-5 text-orange-400" /> Reparos
+                  em Outros Instrumentos
+                  <ChevronDown className="w-5 h-5 text-gray-300" />
+                </li>
+                <span className="text-gray-300 text-sm block py-3 absolute">
+                  Trabalhamos com teclados e instrumentos de percussão.
+                  Oferecemos desde a{" "}
+                  <span className="font-bold">substituição de peças</span> até{" "}
+                  <span className="font-bold">ajustes detalhados</span>,
+                  garantindo que seu equipamento esteja{" "}
+                  <span className="font-bold">pronto para uso</span>.
+                  <Link
+                    href="/outros"
+                    className="text-orange-400 flex items-center gap-1 pt-2 justify-end"
+                  >
+                    <NotepadText className="w-4 h-4 text-orange-400" /> Faça um
+                    orçamento!
+                  </Link>
+                </span>
+              </div>
+
+              <div
+                onClick={() =>
+                  currentItem === 3 ? setCurrentItem(8) : setCurrentItem(3)
+                }
+                className={`relative overflow-hidden h-max ${
+                  currentItem === 3 ? "h-36" : "h-max"
+                } transition-all`}
+              >
+                <li className="text-gray-300 text-sm w-full flex cursor-pointer justify-between gap-1 text-center px-4 items-center py-3 rounded-full bg-gray-900/20 hover:bg-gray-900/15 transition-all hover:scale-[0.98]">
+                  <Speaker className="w-5 h-5 text-orange-400" /> Reparos em
+                  Equipamentos de Áudio ou Eletrônicos
+                  <ChevronDown className="w-5 h-5 text-gray-300" />
+                </li>
+                <span className="text-gray-300 text-sm block py-3 absolute">
+                  Oferecemos reparos em caixas de som, amplificadores e mesas de
+                  som. Identificamos problemas, realizamos{" "}
+                  <span className="font-bold">soldagens</span> e{" "}
+                  <span className="font-bold">trocas de componentes</span>,
+                  entregando equipamentos com{" "}
+                  <span className="font-bold">som de alta qualidade</span>.
+                  <Link
+                    href="/audio"
+                    className="text-orange-400 flex items-center gap-1 pt-2 justify-end"
+                  >
+                    <NotepadText className="w-4 h-4 text-orange-400" /> Faça um
+                    orçamento!
+                  </Link>
+                </span>
+              </div>
+
+              <div
+                onClick={() =>
+                  currentItem === 4 ? setCurrentItem(8) : setCurrentItem(4)
+                }
+                className={`relative overflow-hidden h-max ${
+                  currentItem === 4 ? "h-36" : "h-max"
+                } transition-all`}
+              >
+                <li className="text-gray-300 text-sm w-full flex cursor-pointer justify-between gap-1 text-center px-4 items-center py-3 rounded-full bg-gray-900/20 hover:bg-gray-900/15 transition-all hover:scale-[0.98]">
+                  <MicVocal className="w-5 h-5 text-orange-400" /> Aulas de
+                  Música
+                  <ChevronDown className="w-5 h-5 text-gray-300" />
+                </li>
+                <span className="text-gray-300 text-sm block py-3 absolute">
+                  Nossas aulas são{" "}
+                  <span className="font-bold">personalizadas</span>, cobrindo{" "}
+                  <span className="font-bold">teoria</span> e{" "}
+                  <span className="font-bold">prática</span> em diversos
+                  instrumentos. Para todos os níveis, focamos no{" "}
+                  <span className="font-bold">desenvolvimento musical</span> de
+                  forma leve e divertida.
+                  <Link
+                    href="/aulas"
+                    className="text-orange-400 flex items-center gap-1 pt-2 justify-end"
+                  >
+                    <NotepadText className="w-4 h-4 text-orange-400" /> Saiba
+                    mais!
+                  </Link>
+                </span>
+              </div>
+
+              <li className="text-gray-300 text-sm w-full flex cursor-pointer justify-center px-4 gap-5 items-center py-3 rounded-full bg-gray-900/20">
                 <Link href="https://www.instagram.com/megatommusic/">
                   <Instagram className="w-5 h-5 text-orange-400" />
                 </Link>

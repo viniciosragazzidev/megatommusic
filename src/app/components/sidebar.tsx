@@ -9,18 +9,18 @@ const Sidebar = () => {
     <>
       <span
         onClick={() => setOpen(!open)}
-        className="fixed top-2 right-8 p-2 rounded-lg cursor-pointer bg-gray-950"
+        className="fixed top-2 right-8 p-2 rounded-lg cursor-pointer z-50 bg-gray-950"
       >
         <Menu className="text-orange-400" />
       </span>
 
       <div
-        className={`fixed w-screen h-screen top-0 left-0  backdrop-blur-sm  bg-black/40 ${
+        className={`fixed w-screen h-screen top-0 left-0  backdrop-blur-sm z-50 bg-black/40 ${
           open ? "block" : "hidden"
         }`}
       >
         <aside
-          className={`w-80 h-full border-l-2 border-orange-400 bg-gray-950 shadow-lg shadow-gray-900/50 absolute top-0 right-0 translate-to-0  `}
+          className={`w-80 max-sm:w-screen h-full border-l-2 border-orange-400 bg-gray-950 shadow-lg shadow-gray-900/50 absolute top-0 right-0 translate-to-0  `}
         >
           <span>
             <X
