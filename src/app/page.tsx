@@ -19,7 +19,7 @@ import {
 import Link from "next/link";
 import React from "react";
 export default function Home() {
-  const [currentItem, setCurrentItem] = React.useState<number>();
+  const [currentItem, setCurrentItem] = React.useState(8);
   return (
     <div className="  bg-gray-950 overflow-x-hidden">
       <div className="w-full min-h-screen flex justify-center pt-8">
